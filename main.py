@@ -4,12 +4,9 @@ from elt_pipeline.loader import Loader
 from elt_pipeline.transformer import Transformer
 
 def main():
-    db_conn = DatabaseConnection('sqlite:///main.db')
-    engine = db_conn.connect()
 
     # extract data
-    query = 'SELECT * FROM songs'
-    df = Extractor.from_db('sqlite:///main.db', query)
+    df = Extractor.from_csv('spotify.csv')
 
     # transform data
     transformer = Transformer(df)
