@@ -10,6 +10,8 @@ class Transformer:
     def drop_duplicates(self):
         self.df = self.df.drop_duplicates()
 
+    # missing values method
+
     def get_data(self):
         return self.df
 

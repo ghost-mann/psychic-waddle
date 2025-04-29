@@ -1,6 +1,6 @@
-# ELT pipeline 
+# ETL pipeline 
 
-A simple ELT (Extract, Load, Transform) pipeline package for CSV, API, and Database operations.
+A simple ETL (Extract,Transform,Load) pipeline package for CSV, API, and Database operations.
 
 - db_connection.py - Creates the engine to your database
 
